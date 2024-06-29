@@ -1,12 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.clazz {
+  font-family: "Playwrite MX";
+}
+
 :root {
   --font-family: "Ubuntu", sans-serif;
   --second-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .header {
@@ -23,6 +33,24 @@
   font-weight: 800;
   font-size: 21px;
   line-height: 124%;
+  color: #000;
+}
+.header .header_container .foto_logo span {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 124%;
+  background: linear-gradient(270deg, #8ee901 0%, #4f9c2c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .header_container .foto_logo1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
   color: #000;
 }
 .header .header_container .header_svg {
@@ -198,6 +226,9 @@
   margin-bottom: 31px;
 }
 
+.fotop {
+  padding: 45px 0 100px 0;
+}
 .fotop .fotop_info {
   text-align: center;
   margin-top: 93px;
@@ -217,10 +248,10 @@
   text-transform: uppercase;
   color: #60b021;
 }
-.fotop .foto_card {
+.fotop .foto_title {
   width: 570px;
   text-align: center;
-  margin: 0 405px 0 405px;
+  margin: 0 auto;
   margin-top: 24px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -229,7 +260,7 @@
   text-align: center;
   color: #75758a;
 }
-.fotop .foto_card span {
+.fotop .foto_title span {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -243,6 +274,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 17px;
+  margin-bottom: 45px;
 }
 .fotop .foto_navbar .foto_card1 {
   width: max-content;
@@ -270,29 +302,56 @@
   background: #fff;
   padding: 17px 43px 16px 45px;
 }
-.fotop .foto_img_navbari {
-  display: flex;
+.fotop .foto__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 350px);
   gap: 30px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 45px;
 }
-.fotop .foto_img_navbari1 {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 100px;
+.fotop .foto__cards .card {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/photo (5).png");
+  position: relative;
+}
+.fotop .foto__cards .card .info {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+.fotop .foto__cards .card .info .inf {
+  background-color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  padding: 12px 14px;
+  width: max-content;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+.fotop .foto__cards .card:nth-child(2) {
+  background-image: url("../img/photo (6).png");
+}
+.fotop .foto__cards .card:nth-child(3) {
+  background-image: url("../img/photo (7).png");
+}
+.fotop .foto__cards .card4:nth-child(4) {
+  background-image: url("../img/photo (3).png");
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.fotop .foto__cards .card:nth-child(5) {
+  background-image: url("../img/photo (4).png");
 }
 
 .doxod {
   background: #f5f5f5;
-  margin-top: 96px;
   width: 100%;
   text-align: center;
+  padding: 96px 0 100px 0;
 }
-.doxod .doxod2 .doxod_info {
+.doxod .doxod_title .doxod_info {
+  margin-top: 96px;
   text-align: center;
   font-family: var(--font-family);
   font-weight: 700;
@@ -302,8 +361,9 @@
   text-align: center;
   color: #000000;
   margin-bottom: 24px;
+  margin-top: 96px;
 }
-.doxod .doxod2 .doxod_info span {
+.doxod .doxod_title .doxod_info span {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
@@ -312,10 +372,10 @@
   text-align: center;
   color: #60b021;
 }
-.doxod .doxod2 .doxod_info1 {
+.doxod .doxod_title .doxod_info1 {
   width: 470px;
   text-align: center;
-  padding: 24px 455px 37px 455px;
+  margin: 0 auto;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -326,19 +386,153 @@
 .doxod .doxod_logo_info {
   display: flex;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 37px;
 }
-.doxod .doxod_logo_info .doxod_logo {
-  width: 255px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+.doxod .doxod_logo_info .doxod_card {
   background: #fff;
-  text-align: end;
-}
-.doxod .doxod_logo_info .doxod_logo .doxod_card {
-  width: 195px;
-  margin: 0 135px 0 30px;
-  padding: 25px 30px 91px 30px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   text-align: center;
+  width: 255px;
+  padding: 25px 30px;
+  height: 155px;
+  position: relative;
+}
+.doxod .doxod_logo_info .doxod_card img {
+  position: absolute;
+  bottom: 28px;
+  right: 30px;
+}
+.doxod .doxod_card1 .doxod_cards {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 100px;
+  width: 300px;
+  padding: 17px 38px;
+  background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.novost .container .novost_logo {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 111%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-top: 96px;
+}
+.novost .container .novost_logo span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 111%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #60b021;
+  margin-right: 5px;
+}
+.novost .container .novost_navbar {
+  margin-top: 17px;
+  display: flex;
+  gap: 30px;
+}
+.novost .container .novost_navbar .novost_cards .novost_info {
+  border: 1px solid #efefef;
+  padding: 21px 25px;
+  width: 350px;
+}
+.novost .container .novost_navbar .novost_cards .novost_info .novost_logo1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #75758a;
+}
+.novost .container .novost_navbar .novost_cards .novost_info .novost_logo2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #000;
+}
+.novost .container .novost_navbar .novost_cards .novost_info .novost_logo3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 186%;
+  color: #75758a;
+  width: 300px;
+}
+.novost .container .novost_navbar .novost_cards .novost_img img {
+  width: 350px;
+  margin: 0 auto;
+}
+.novost .container .novost_aytim {
+  border-radius: 100px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
+  width: max-content;
+  margin: 0 auto;
+  padding: 17px 49px 16px 50px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.mep {
+  background-image: url(../img/for\ map\ \(1\).png);
+  width: 100%;
+  margin-bottom: 102px;
+}
+.mep .container {
+  padding: 108px 0 102px;
+}
+.mep .container .mep_navbar {
+  display: flex;
+  gap: 30px;
+}
+.mep .container .mep_navbar .mep_cards {
+  width: 255px;
+  background-color: white;
+  text-align: center;
+  padding: 25px 81px 33px 30px;
+}
+.mep .container .mep_navbar .mep_cards .mep_logo1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #000;
+  margin-bottom: 18px;
+}
+.mep .container .mep_navbar .mep_cards .mep_logo2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #75758a;
+  margin-bottom: 10px;
+  width: 130px;
+  text-align: center;
+}
+.mep .container .mep_navbar .mep_cards .mep_logo3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #60b021;
 }/*# sourceMappingURL=style.css.map */
