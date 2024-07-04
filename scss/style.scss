@@ -527,7 +527,7 @@
 .mep{
     background-image: url(../img/for\ map\ \(1\).png);
     width: 100%;
-    margin-bottom: 102px;
+    // margin-bottom: 102px;
     .container{
         padding: 108px 0 102px ;
       .mep_navbar{
@@ -567,6 +567,195 @@
             }
         }
       }
+    //   .mep_aytim{
+    //     .mep_info_1{
+    //         background-color: brown;
+    //         width: 400px;
+    //         height: 50px;
+    //     }
+      }
+    }
+
+.footer{
+    background-color: dimgray;
+ .container{
+ .footer_navbar{
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    .footer_cards{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .fotop_info1{
+            svg{
+
+            }
+        }
+        .fotop_info2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            span{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 125%;
+                color: #8ee901;
+                // margin: 0 auto;
+               p{
+               color: white;
+
+               }
+        }
+        }
+    }
+   .footer_aytim{
+    .fotop_input{
+        input{
+         width: 475px;
+         height: 47px;
+         padding: 20px;
+         border: none;
+         outline: none;
+         font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: #75758a;
+        }
+     }
+        .footer_info{
+         font-family: var(--font-family);
+         font-weight: 700;
+         font-size: 14px;
+         text-transform: uppercase;
+         text-align: center;
+         color: #fff;
+         background: #4f9c2c;
+         text-align: center;
+         width: 160px;
+         height: 47px;
+         padding: 10px 0 10px 0;
+        }
+   }
+   .footer_cool{
+    display: flex;
+    gap: 10px;
+    .cool_title{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        color: #8ee901;
+    }
+    
+   }
+ }
+    
+    
+   
+ }
+
+}
+.fotop_24{
+    display: flex;
+   .container{
+ .footer_kansovka{
+    display: flex;
+    gap: 30px;
+.footer_info1{
+    .fotop_cards1{
+        font-family: var(--second-family);
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 124%;
+        color: #000;
+        margin-top:25px;
+        span{
+            font-family: var(--second-family);
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 124%;
+            background: linear-gradient(270deg, #8ee901 0%, #4f9c2c 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
 }
+.fotop_cards2{
+    font-family: var(--font-family);
+    font-weight: 500px;
+    line-height: 125%;
+    color: #000;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 18px ;
+}
+.fotop_cards3{
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 125%;
+    color: #75758a;
+    span{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18pxpx;
+        line-height: 143%;
+        color: #75758a;
+    }
 
+}
+}
+.footer_info2{
+    margin-top:30px;
+
+    .fotop_info{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .fotop_cards5{
+            img{
+                width: 32px;
+                margin-bottom: 53px
+            }
+           }
+    }
+    .footer_logo1{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 167%;
+        color: #75758a;
+    }
+}
+.footer_info3{
+    margin-top: 15px;
+    .footer_moskva{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 162%;
+        color: #000;
+        margin-bottom: 15px;
+        
+    }
+    .ikkinchi_p{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #000;
+    }
+}
+.fotop_visa{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    .visa_img1{
+        margin-top: 15px;
+    }
+}
+ }
+   }
+
+
+}

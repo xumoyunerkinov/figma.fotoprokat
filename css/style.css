@@ -496,7 +496,6 @@
 .mep {
   background-image: url(../img/for\ map\ \(1\).png);
   width: 100%;
-  margin-bottom: 102px;
 }
 .mep .container {
   padding: 108px 0 102px;
@@ -535,4 +534,160 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #60b021;
+}
+
+.footer {
+  background-color: dimgray;
+}
+.footer .container .footer_navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.footer .container .footer_navbar .footer_cards {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer .container .footer_navbar .footer_cards .fotop_info2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer .container .footer_navbar .footer_cards .fotop_info2 span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #8ee901;
+}
+.footer .container .footer_navbar .footer_cards .fotop_info2 span p {
+  color: white;
+}
+.footer .container .footer_navbar .footer_aytim .fotop_input input {
+  width: 475px;
+  height: 47px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #75758a;
+}
+.footer .container .footer_navbar .footer_aytim .footer_info {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #4f9c2c;
+  text-align: center;
+  width: 160px;
+  height: 47px;
+  padding: 10px 0 10px 0;
+}
+.footer .container .footer_navbar .footer_cool {
+  display: flex;
+  gap: 10px;
+}
+.footer .container .footer_navbar .footer_cool .cool_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: #8ee901;
+}
+
+.fotop_24 {
+  display: flex;
+}
+.fotop_24 .container .footer_kansovka {
+  display: flex;
+  gap: 30px;
+}
+.fotop_24 .container .footer_kansovka .footer_info1 .fotop_cards1 {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 124%;
+  color: #000;
+  margin-top: 25px;
+}
+.fotop_24 .container .footer_kansovka .footer_info1 .fotop_cards1 span {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 124%;
+  background: linear-gradient(270deg, #8ee901 0%, #4f9c2c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fotop_24 .container .footer_kansovka .footer_info1 .fotop_cards2 {
+  font-family: var(--font-family);
+  font-weight: 500px;
+  line-height: 125%;
+  color: #000;
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.fotop_24 .container .footer_kansovka .footer_info1 .fotop_cards3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 125%;
+  color: #75758a;
+}
+.fotop_24 .container .footer_kansovka .footer_info1 .fotop_cards3 span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18pxpx;
+  line-height: 143%;
+  color: #75758a;
+}
+.fotop_24 .container .footer_kansovka .footer_info2 {
+  margin-top: 30px;
+}
+.fotop_24 .container .footer_kansovka .footer_info2 .fotop_info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.fotop_24 .container .footer_kansovka .footer_info2 .fotop_info .fotop_cards5 img {
+  width: 32px;
+  margin-bottom: 53px;
+}
+.fotop_24 .container .footer_kansovka .footer_info2 .footer_logo1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: #75758a;
+}
+.fotop_24 .container .footer_kansovka .footer_info3 {
+  margin-top: 15px;
+}
+.fotop_24 .container .footer_kansovka .footer_info3 .footer_moskva {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  color: #000;
+  margin-bottom: 15px;
+}
+.fotop_24 .container .footer_kansovka .footer_info3 .ikkinchi_p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #000;
+}
+.fotop_24 .container .footer_kansovka .fotop_visa {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+.fotop_24 .container .footer_kansovka .fotop_visa .visa_img1 {
+  margin-top: 15px;
 }/*# sourceMappingURL=style.css.map */
