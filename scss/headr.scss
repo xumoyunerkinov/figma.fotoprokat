@@ -1,0 +1,47 @@
+.header{
+    margin: 0 auto;
+    width: 1380px;
+    padding: 29px 27px 29px 135px;
+    .header_container{
+        display: flex;
+        justify-content: space-between;
+        .foto_logo{
+            font-family: var(--second-family);
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 124%;
+            color: #000;
+            span{
+                font-family: var(--second-family);
+                font-weight: 800;
+                font-size: 21px;
+                line-height: 124%;
+                background: linear-gradient(270deg, #8ee901 0%, #4f9c2c 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .foto_logo1{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 129%;
+            text-transform: uppercase;
+            color: #000;
+        }
+        .header_svg{
+            display: flex;
+            .foto_logo{
+                padding: 0 27px;
+                border-left: 1px solid #efefef;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .header{
+        background-color: red;
+    }
+}
+    
